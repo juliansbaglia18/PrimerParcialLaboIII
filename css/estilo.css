@@ -1,0 +1,152 @@
+.contenedor{
+    background-color: rgb(197, 191, 191);
+    position: fixed;
+    flex-direction: column;
+    bottom:  30%;
+    left:  25%;
+    width: 50%;
+    height: 40%;
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgb(87, 86, 86);
+    animation-name: abrir2;
+    animation-duration: 0.3s;
+}
+.btns{
+    height: 20%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/gif-cargando-sin-fondo-3.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+.btnContenedor[type=button]{
+    width: 20%;
+}
+.btnEliminar[type=button]{
+    width: 20%;
+    background-color: rgb(207, 6, 6);
+    
+}
+.btnEliminar[type=button]:hover{
+    background-color: rgb(231, 7, 7);
+
+}
+@keyframes abrir{
+    from{
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        width: 50%;
+        height: 25%;
+    }
+}
+@keyframes abrir2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+input[type=button]{
+    width: 50%;
+    background-color: rgb(4, 100, 4);
+    color: white;
+    padding: 14px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text]{
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px;
+}
+input[type=date]{
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.inputError{
+    border: 2px solid red;
+}
+.inputSinError{
+    border: 1px solid white;
+}
+.btnCerrar[type=button]{
+    margin: 0px;
+    padding: 0px 0px;
+    width: 1cm;
+    height: 1cm;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(207, 6, 6);
+    color: white;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.btnCerrar[type=button]:hover {
+    background-color: rgb(231, 7, 7);
+}
+
+
+.abrir{
+    background-color: rgb(4, 100, 4);
+    color: white;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+}
+.btnAbrir[type=button]{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    width: 10%;
+    background-color: rgb(4, 100, 4);
+    color: white;
+    padding: 14px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px 0px rgb(87, 86, 86);
+
+}
+
+input[type=button]:hover {
+    background-color: rgb(20, 145, 4);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    background-color: lightcoral;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: rgb(219, 214, 214);
+}

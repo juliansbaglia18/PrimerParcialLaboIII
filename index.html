@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+    <div class="loader" id="loader" hidden></div>
+
+    <div class="contenedor" id="divContenedor" hidden>
+        <input type="button" value="X" id="btnCerrar" class="btnCerrar"/><br>
+        <label for="name">Nombre</label> 
+        <input type="text" name="" placeholder="Ingresa el nombre" class="inpuSinError" id="name">
+        
+        <label for="cuatri">Cuatrimestre</label> <br>
+        <select name="cuatri" id="cuatri">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br><br>
+        
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha">
+        <label for="Turno">Turno</label>
+        <div>
+            &nbsp;
+            <input type="radio" id="mañana" name="mañana" value="mañana">
+            <label for="mañana">Mañana</label><br>
+        </div>
+        <div>
+            &nbsp;
+            <input type="radio" id="noche" name="noche" value="noche">
+            <label for="noche">Noche</label>
+        </div>
+        <div class="btns">    
+            <input type="button" value="Eliminar" id="btnEliminar"class="btnEliminar"/>
+            <input type="button" value="Modificar" id="btnGuardar" class="btnContenedor"/>
+        </div>
+    </div>
+
+    <h2>Lista de Personas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha final</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody id="tcuerpo"></tbody>
+    </table>
+</body>
+</html>
