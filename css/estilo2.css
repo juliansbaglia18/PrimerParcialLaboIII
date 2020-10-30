@@ -1,0 +1,68 @@
+table {
+    position: relative;
+    width: 90%;
+    border: 1px solid black;
+    z-index: 1;
+ }
+ 
+ th, td {    
+    text-align: left;
+    border: 1px solid black;
+    border-spacing: 0;
+ }
+
+ th{
+     color: Red;
+     background-color: black;
+     width: 20%;
+ }
+
+ td{
+    width: 10%;
+    background-color: grey;
+ }
+
+ .ModificarMateria{
+   position: absolute;
+   width: max-content;
+   padding: 15px;
+   top: 25%;
+   left: 35%;
+   border-radius: 5px;
+   border:1px solid black;
+   background-color: lightseagreen;
+   z-index: 2;
+}
+
+.btnEliminarModificar{
+   background-color: red;
+   border: red;
+   border-radius: 5px;
+   height: 30px;
+   width: 70px;
+   margin-left: 144px;
+}
+
+.btnModificar{
+   background-color: green;
+   border: green;
+   border-radius: 5px;
+   height: 30px;
+   width: 70px;
+}
+
+.date{
+   width: 283px;
+}
+
+.spinnerGIF{
+   text-align:center;
+   opacity: 0.5;
+   top: 50%;
+}
+
+.btnCancelarModificar{
+   background-color: grey;
+   border: grey;
+   border-radius: 5px;
+}

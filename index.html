@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sbaglia julian</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/funciones.js"></script>
+    <script src="./js/java1.js"></script>
 </head>
 <body>
     <div class="loader" id="loader" hidden></div>
 
     <div class="contenedor" id="divContenedor" hidden>
         <input type="button" value="X" id="btnCerrar" class="btnCerrar"/><br>
+        <input type="text" id="idMateria" hidden >
         <label for="name">Nombre</label> 
-        <input type="text" name="" placeholder="Ingresa el nombre" class="inpuSinError" id="name">
+        <input type="text" name="" placeholder="Ingresa el nombre" class="inpuSinError" id="txtName">
         
         <label for="cuatri">Cuatrimestre</label> <br>
-        <select name="cuatri" id="cuatri">
+        <select name="cuatri" id="slcCuatri" disabled>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -24,18 +25,18 @@
         </select><br><br>
         
         <label for="fecha">Fecha</label>
-        <input type="date" id="fecha">
-        <label for="Turno">Turno</label>
-        <div>
-            &nbsp;
-            <input type="radio" id="mañana" name="mañana" value="mañana">
-            <label for="mañana">Mañana</label><br>
-        </div>
-        <div>
-            &nbsp;
-            <input type="radio" id="noche" name="noche" value="noche">
-            <label for="noche">Noche</label>
-        </div>
+        <input type="date" id="dateFecha">
+        
+        <label for="Turno" name="turno">Turno</label>
+        <fieldset>
+            <label>
+                <input type="radio" id="rdoMañana" name="mañana" value="Mañana">Mañana
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="rdoNoche" name="noche" value="Noche">Noche
+            </label>
+        </fieldset>
         <div class="btns">    
             <input type="button" value="Eliminar" id="btnEliminar"class="btnEliminar"/>
             <input type="button" value="Modificar" id="btnGuardar" class="btnContenedor"/>
@@ -43,13 +44,15 @@
     </div>
 
     <h2>Lista de Personas</h2>
-    <table>
+    <table id="tableMaterias">
         <thead>
             <tr>
+                <th hidden=false id="tableId">id</th>
                 <th>Nombre</th>
                 <th>Cuatrimestre</th>
                 <th>Fecha final</th>
                 <th>Turno</th>
+                <th hidden id="idTable">Id</th>
             </tr>
         </thead>
         <tbody id="tcuerpo"></tbody>
